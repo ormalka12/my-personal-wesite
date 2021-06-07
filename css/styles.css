@@ -51,7 +51,7 @@ section{
 .nav-list{
     display: flex;
     align-items: flex-start;
-    max-width: 90%;
+    /* width: 90%; */
     padding: 0;
     margin: auto;
 }
@@ -263,14 +263,18 @@ section{
 }
 
 @media (max-width: 480px) {
-    .top-container_text, .svg-image{
-      margin-top: 170px;
+    .top-container_text{
+      margin-top: 120px;
     }
     .top-container_box{
         flex-direction: column;
     }
-    .c-info_avatar img{
-        display: none;
+    .nav-list{
+        width: auto;
+    }
+    .nav-list-item{
+        flex-grow: 1;
+        text-align: center;
     }
     .top-container_title{
         text-align: center;
