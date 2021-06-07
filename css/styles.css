@@ -1,18 +1,16 @@
 body{
     margin: 0px;
-    /* font-family: 'Montserrat Alternates', sans-serif; */
-    /* font-family: 'Quattrocento'; */
     font-family: 'Lato'; 
     background-color: rgb(254, 250, 246);
-    
-    /* background-color: #ffeec4; */
-    /* font-family: 'Roboto'; */
 }
 
 h1{
     margin-top: 0;
     font-family: 'Dancing Script';
     font-size: 4em;
+}
+section{
+    width: 100%;
 }
   /* Animations */
 .animate-pop-in {
@@ -46,7 +44,6 @@ h1{
     -webkit-backdrop-filter: blur(80px);
     z-index: 1040;
     background-color: rgba(255, 255, 255, 0.2);
-    /* background: #fefaf6; */
     position: fixed;
     width: 100%;
 }
@@ -57,7 +54,6 @@ h1{
     max-width: 90%;
     padding: 0;
     margin: auto;
-    /* justify-content: space-between; */
 }
 
 .nav-list-item{
@@ -79,22 +75,15 @@ h1{
     height: 3px;
     display: block;
     content: "";
-    /* opacity: 0; */
 }
 
 .top-container {
-    /* background:
-    linear-gradient(#ffeec4, transparent),
-    linear-gradient(to top left, #f8c6ff, transparent),
-    linear-gradient(to top right, #ffcbf2, transparent); */
     background-blend-mode: screen;
     background:
     linear-gradient(#ffeec4, transparent),
     linear-gradient(to top left, #f8c6ff, transparent),
     linear-gradient(to top right, #b6a0ea, transparent);
     height: 100vh;
-    /* padding: 2em 0 0; */
-    /* padding-top: 95px; */
     margin-bottom: 15px;
     border: 2px solid rgb(255, 240, 228);
     align-items: center;
@@ -102,9 +91,7 @@ h1{
 }
 
 .top-container_title{
-    /* font-family: 'Montserrat Alternates', sans-serif; */
     font-family: 'Dancing Script';
-    /* font-family: 'Merriweather Sans', sans-serif; */
     font-size: 4em;
     animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
@@ -123,7 +110,6 @@ h1{
     height: 100%;
     display: flex;
     align-items: center;
-/* background:linear-gradient(338.83deg,#f8c6ff -3.41%,rgba(255,196,255,0) 52.31%),#ffeec4; */
 }
 
 .top-container_text, .svg-image{
@@ -138,14 +124,8 @@ h1{
     padding-left: 20px;
 }
 
-/* @media (min-width: 1000px)
-.top-container_title {
-    font-size: 4em;
-} */
 
 /* Timeline */
-
-
 
 .container{
     margin: 0 auto;
@@ -242,7 +222,6 @@ h1{
 .my-exp{
     padding: 3rem 3rem;
     margin-top: 10px;
-    /* padding-top: 15px; */
     text-align: center;
     background:linear-gradient(39.4deg
         ,#b6a0ea -2.55%,rgba(182,160,234,0) 45.21%),#f1ebff;
@@ -259,7 +238,6 @@ h1{
 .exp-img{
     width: 40px;
     height: 80px;
-    /* background-color: #d8bbff; */
     background-color: rgb(254, 250, 246);
     border-radius: 50%;
     flex: 1 3 30px;
@@ -283,6 +261,53 @@ h1{
     letter-spacing: 5px;
     font-size: 3rem;
 }
+
+@media (max-width: 480px) {
+    .top-container_text, .svg-image{
+      margin-top: 170px;
+    }
+    .top-container_box{
+        flex-direction: column;
+    }
+    .c-info_avatar img{
+        height: 230px;
+        margin-bottom: 20px;
+    }
+    .top-container_title{
+        text-align: center;
+    }    
+    .content > h2,h3{
+        font-size: 1.1em;
+    }
+    .content > li,p{
+        font-size: 0.9em;
+    } 
+    ul{
+        font-size: 0.9em;
+        padding-inline-start: 20px;
+    }
+    .inner_ul{
+        padding-inline-start: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .my-exp {
+        padding: 1rem 1rem;
+    }
+    .experience-container{
+        width: 100%;
+    }
+
+    .exp-img{
+        width: 20px;
+        height: 40px;
+    }
+    .exp-img img {
+        width: 100%;
+        height: 40px;
+        object-fit: fill;
+    }
+  }
 
 
 
