@@ -234,7 +234,7 @@ h1{
     opacity: 1;
 }
 
-.content > h2,p,h3{
+.content > h2,p,h3, ul{
     margin-left: 1rem;
     margin-right: 1rem;
 }
