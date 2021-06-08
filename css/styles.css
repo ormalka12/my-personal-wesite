@@ -40,12 +40,14 @@ section{
   }
 
 .nav-header{
-    backdrop-filter: blur(80px);
+    backdrop-filter: blur(500px);
     -webkit-backdrop-filter: blur(80px);
-    z-index: 1040;
     background-color: rgba(255, 255, 255, 0.2);
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .nav-list{
@@ -263,17 +265,25 @@ section{
 }
 
 @media (max-width: 480px) {
+    .top-container{
+        height: auto;
+    }
     .top-container_text{
       margin-top: 120px;
     }
     .top-container_box{
         flex-direction: column;
     }
+    .nav-header{
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
     .nav-list{
-        width: auto;
+        margin: 0;
     }
     .nav-list-item{
-        flex-grow: 1;
         text-align: center;
     }
     .top-container_title{
